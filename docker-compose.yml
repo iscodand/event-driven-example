@@ -2,8 +2,7 @@ services:
   kafka:
     image: bitnami/kafka:latest
     ports:
-      - 19090:19090    # expõe EXTERNAL listener para host
-      # - 9092:9092    # opcional, expõe INTERNAL listener (se quiser)
+      - 19090:19090
     environment:
       - KAFKA_ENABLE_KRAFT=yes
       - KAFKA_CFG_NODE_ID=1
